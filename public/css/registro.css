@@ -1,0 +1,92 @@
+/* Estilos generales para el formulario de registro */
+body{
+    background-color: white
+}
+.registro-container {
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    padding: 0; /* Elimina el padding si es necesario */
+    margin: 0; /* Elimina el margen si es necesario */
+}
+
+.left-text {
+    flex: 1;
+    padding: 20px;
+}
+
+
+h1 {
+    color: #007bff; /* Color principal */
+}
+
+.form-floating {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    border: 1px solid #007bff; /* Borde azul */
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: #0056b3; /* Borde azul oscuro al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.text-primary {
+    color: #007bff; /* Color azul para las etiquetas */
+}
+
+.btn-registrar {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.btn-registrar:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el mouse */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+.right-form {
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho */
+}
+
+.container {
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+.text-center {
+    margin-top: 20px; /* Espacio adicional arriba del texto */
+}
+.mt-3{
+    color: black;
+}
+
+.text-primary {
+    color: #007bff; /* Color azul para el enlace */
+    text-decoration: underline; /* Subrayar el enlace */
+}
+
+.text-primary:hover {
+    color: #0056b3; /* Color azul más oscuro al pasar el mouse */
+}
+
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+}

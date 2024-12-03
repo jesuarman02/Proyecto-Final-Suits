@@ -1,0 +1,103 @@
+/* Estilo básico de la navbar */
+.navbar {
+    display: flex; /* Usar Flexbox */
+    justify-content: space-between; /* Distribuir los elementos con espacio entre ellos */
+    align-items: center; /* Centrar los elementos verticalmente */
+    background-color: rgb(150, 199, 217); /* Fondo azul claro */
+    padding: 10px 20px; /* Espaciado interno */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-link {
+    color: #ffffff; /* Color blanco para los enlaces */
+    text-decoration: none; /* Eliminar el subrayado */
+    margin-left: 20px; /* Espacio entre los enlaces */
+    font-size: 1rem; /* Tamaño de fuente de los enlaces */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+.nav-link:hover {
+    color: #484848; /* Color gris al pasar el mouse */
+}
+
+/* Estilo para los elementos de la barra de navegación */
+.nav-item {
+    font-size: 1.2rem; /* Tamaño de fuente para los elementos */
+    margin-left: 20px; /* Margen entre los elementos */
+}
+
+/* Estilo para la marca/logo de la navbar */
+.navbar-brand {
+    color: #ffffff; /* Color blanco para la marca */
+    font-size: 1.5rem; /* Tamaño de la fuente de la marca */
+    font-weight: bold; /* Negrita para la marca */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #484848; /* Color gris oscuro al pasar el mouse */
+}
+
+/* Estilo para el botón de navegación */
+#nav-btn {
+    background-color: #fdfeff; /* Fondo blanco para el botón */
+    border-color: #0d6efd; /* Borde azul para el botón */
+    color: black; /* Texto negro */
+    font-size: 1rem; /* Tamaño de fuente para el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#nav-btn:hover {
+    background-color: #484848; /* Color gris oscuro al pasar el mouse */
+    color: white; /* Texto blanco al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column; /* Cambiar el flex a columna para pantallas pequeñas */
+        align-items: center; /* Centrar los elementos */
+        padding: 15px 10px; /* Ajustar el padding para pantallas pequeñas */
+    }
+
+    .nav-link {
+        margin-left: 0; /* Eliminar margen izquierdo en pantallas pequeñas */
+        margin-bottom: 10px; /* Agregar espacio entre los enlaces */
+        font-size: 1.1rem; /* Tamaño de fuente ligeramente más grande */
+    }
+
+    .nav-item {
+        margin-left: 0; /* Eliminar margen izquierdo */
+        text-align: center; /* Alinear los elementos de forma centrada */
+        margin-bottom: 10px; /* Agregar margen inferior para los elementos */
+    }
+
+    #nav-btn {
+        margin-top: 10px; /* Espacio arriba del botón */
+        width: 100%; /* Ancho completo del botón */
+        padding: 12px 0; /* Aumentar altura para pantallas pequeñas */
+    }
+}
+
+/* Para pantallas aún más pequeñas */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px 5px; /* Reducir el padding en pantallas aún más pequeñas */
+    }
+
+    .nav-link {
+        font-size: 1rem; /* Reducir el tamaño de los enlaces */
+        margin-bottom: 8px; /* Espaciado más pequeño entre enlaces */
+    }
+
+    .nav-item {
+        font-size: 1rem; /* Reducir tamaño de la fuente */
+        margin-bottom: 8px; /* Reducir el espacio entre los elementos */
+    }
+
+    #nav-btn {
+        padding: 10px; /* Ajustar padding para pantallas muy pequeñas */
+    }
+}

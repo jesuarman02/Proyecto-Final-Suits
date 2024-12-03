@@ -1,0 +1,147 @@
+.footer {
+    background-color: #b9e5ea;
+    color: #333;
+    padding: 20px 10px; /* Reduce el padding general */
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 10px; /* Espaciado más compacto */
+}
+
+.footer-section {
+    flex: 1 1 calc(33.33% - 10px); /* Tres columnas en pantallas grandes */
+    margin: 5px; /* Reduce el margen */
+    min-width: 150px; /* Reduce el ancho mínimo */
+    text-align: left;
+}
+
+.titulo-footer {
+    font-size: 1.1rem; /* Tamaño más pequeño */
+    margin-bottom: 15px; /* Reduce el espacio inferior */
+    color: #030b83;
+    font-weight: bold;
+}
+
+.texto-footer, 
+.lista-footer li a {
+    font-size: 12px; /* Reduce el tamaño de fuente */
+    line-height: 1.4; /* Reduce el interlineado */
+    color: #555;
+    text-decoration: none;
+}
+
+.lista-footer {
+    list-style: none;
+    padding: 0;
+}
+
+.item-footer {
+    margin-bottom: 8px; /* Reduce el margen entre elementos */
+}
+
+.item-footer a:hover {
+    color: #007bff;
+}
+
+.social-icons-footer {
+    margin-top: 10px; /* Reduce el margen superior */
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px; /* Espaciado compacto entre iconos */
+}
+
+.icon-footer {
+    display: inline-block;
+    width: 30px; /* Iconos más pequeños */
+    height: 30px;
+    margin-right: 0;
+    background-color: #007bff;
+    color: #030b83;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.icon-footer:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px; /* Reduce el margen superior */
+    font-size: 12px; /* Reduce el tamaño de fuente */
+    color: #555;
+}
+
+.footer-bottom a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+    .footer-section {
+        flex: 1 1 calc(50% - 10px); /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px; /* Espaciado más pequeño entre secciones */
+    }
+
+    .footer-section {
+        flex: 1 1 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        text-align: center;
+    }
+
+    .social-icons-footer {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        font-size: 11px; /* Ajustar tamaño de fuente */
+        margin-top: 8px; /* Espacio más compacto */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px 5px; /* Padding más reducido */
+    }
+
+    .titulo-footer {
+        font-size: 1rem; /* Ajusta el tamaño del título */
+    }
+
+    .texto-footer, 
+    .lista-footer li a {
+        font-size: 11px; /* Reduce el tamaño de fuente */
+    }
+
+    .icon-footer {
+        width: 25px; /* Iconos más pequeños */
+        height: 25px;
+        line-height: 25px;
+    }
+
+    .footer-bottom {
+        font-size: 10px; /* Texto más compacto */
+    }
+}

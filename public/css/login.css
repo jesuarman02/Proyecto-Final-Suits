@@ -1,0 +1,167 @@
+body {
+    background-color: #f0f8ff; /* Color de fondo azul claro */
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    display: flex; /* Usar flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinear verticalmente */
+    margin: -10px; /* Extiende fuera del contenedor */
+    padding: 10px; /* Ajusta si es necesario */   
+    background-image: url('../img/inicio1.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Que cubra todo el contenedor */
+    background-position:center; /* Centrado */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten */
+}
+
+.left-text {
+    flex: 1 1 45%; /* Ancho mínimo del 45% */
+    padding: 20px; /* Reducir el espaciado interno */
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco translúcido */
+    border-radius: 15px; /* Bordes redondeados */
+    margin: 10px; /* Espaciado externo */
+    max-width: 500px; /* Ancho máximo */
+    box-sizing: border-box; /* Incluir padding en el ancho */
+}
+
+.left-text h1 {
+    font-size: 2rem; /* Reducir tamaño de fuente */
+    color: #007bff; /* Azul vibrante */
+    font-weight: bold; /* Texto en negrita */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra del texto */
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+.left-text p {
+    font-size: 1rem; /* Reducir tamaño de fuente */
+    color: #333; /* Color del texto */
+    line-height: 1.5; /* Altura de línea */
+    margin-top: 10px; /* Espacio superior */
+}
+
+.right-form {
+    flex: 1 1 45%; /* Ancho mínimo del 45% */
+    background-color: #ffffffde; /* Fondo blanco */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin: 10px auto; /* Espaciado y centrado */
+    max-width: 500px; /* Ancho máximo */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluir padding en el ancho */
+}
+
+.right-form h2 {
+    text-align: center; /* Centrar el texto */
+    color: #007bff; /* Azul vibrante */
+    font-size: 1.5rem; /* Reducir tamaño */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.input-group {
+    display: flex; /* Alinear icono e input */
+    align-items: center; /* Centrar verticalmente */
+    margin-bottom: 15px; /* Espacio entre grupos */
+}
+
+.input-group input {
+    flex: 1; /* Input ocupa el resto del espacio */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #007bff; /* Borde azul */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    transition: 0.3s; /* Animación suave */
+    box-sizing: border-box; /* Incluir padding en el ancho */
+}
+
+.input-group i {
+    color: #007bff; /* Color del icono */
+    margin-right: 10px; /* Espacio entre icono e input */
+}
+
+.btn-login {
+    background-color: #007bff; /* Color del botón */
+    color: white; /* Color del texto */
+    width: 100%; /* Ancho completo */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar el cursor */
+    transition: transform 0.3s ease; /* Suavizar animación */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 10px; /* Espacio superior */
+}
+
+.btn-login:hover {
+    background-color: #0056b3; /* Color más oscuro */
+    transform: scale(1.05); /* Ligeramente más grande */
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 10px; /* Reducir espacio superior */
+    font-size: 0.9rem; /* Tamaño más pequeño */
+    color: #333;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    .login-container {
+        padding: 30px; /* Reducir padding */
+        height: auto; /* Ajustar altura */
+    }
+
+    .left-text, .right-form {
+        flex: 1 1 100%; /* Ocupan todo el ancho */
+        margin: 10px 0; /* Espaciado externo */
+    }
+
+    .left-text p {
+        font-size: 0.9rem; /* Reducir fuente */
+    }
+
+    .right-form h2 {
+        font-size: 1.3rem; /* Reducir fuente */
+    }
+}
+
+@media (max-width: 768px) {
+    .left-text h1 {
+        font-size: 1.5rem; /* Reducir tamaño */
+    }
+
+    .input-group input {
+        font-size: 0.9rem; /* Reducir fuente */
+        padding: 8px; /* Reducir padding */
+    }
+
+    .btn-login {
+        font-size: 0.9rem; /* Reducir fuente */
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 15px; /* Reducir padding */
+    }
+
+    .left-text h1 {
+        font-size: 1.2rem; /* Reducir tamaño */
+    }
+
+    .right-form {
+        padding: 15px; /* Reducir padding */
+    }
+
+    .btn-login {
+        padding: 8px; /* Reducir padding */
+        font-size: 0.8rem; /* Reducir tamaño */
+    }
+
+    .footer-text {
+        font-size: 0.8rem; /* Reducir fuente */
+    }
+}

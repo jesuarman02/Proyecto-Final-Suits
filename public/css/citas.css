@@ -1,0 +1,91 @@
+#container-citas {
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    padding: 2rem; /* Ajuste con unidades relativas */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Asegura que ocupa todo el espacio disponible */
+    max-width: 600px; /* Límite máximo de ancho */
+    margin: 1rem auto; /* Centrado horizontal */
+}
+
+.input-group-text {
+    height: 2.5rem;
+    font-size: 1.25rem; /* Usa rem para tamaños escalables */
+    width: 2.5rem;
+}
+
+input.form-control:focus, 
+select.form-select:focus, 
+textarea.form-control:focus {
+    border-color: #007bff; /* Color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al enfocar */
+    outline: none; /* Sin contorno */
+}
+
+#h2-citas {
+    color: #007bff; /* Color azul de Bootstrap */
+    text-align: center; /* Centrar el título */
+    font-size: 2rem; /* Escalable */
+}
+
+#icon-nombre, #icon-direccion, #icon-telefono, #icon-motivo {
+    background-color: #e9ecef; /* Color de fondo para los iconos */
+}
+
+#input-nombre, #input-direccion, #input-telefono, #input-fecha, #input-motivo {
+    border: 1px solid #ced4da; /* Borde estándar para los inputs */
+    font-size: 1rem; /* Escalable */
+}
+
+#select-departamento, #select-doctor {
+    border: 1px solid #ced4da; /* Borde estándar para los selects */
+    font-size: 1rem; /* Escalable */
+}
+
+#btn-enviar-cita {
+    background-color: #007bff; /* Color del botón */
+    border-color: #007bff; /* Color del borde del botón */
+    width: 100%; /* Ancho completo en pantallas pequeñas */
+    max-width: 300px; /* Máximo ancho en pantallas grandes */
+    margin: 1rem auto; /* Centrado */
+    font-size: 1rem; /* Tamaño escalable */
+    padding: 0.5rem 1rem;
+}
+
+#btn-enviar-cita:hover {
+    background-color: #0056b3; /* Color del botón al pasar el mouse */
+    border-color: #0056b3; /* Color del borde al pasar el mouse */
+}
+
+.form-label-titulo {
+    font-size: 1.3rem; /* Tamaño escalable */
+    margin-bottom: 0.5rem; /* Espaciado inferior */
+}
+
+/* Media Queries para ajustes responsivos */
+@media (max-width: 768px) {
+    #h2-citas {
+        font-size: 1.5rem;
+    }
+
+    .input-group-text {
+        font-size: 1rem;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    #btn-enviar-cita {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #container-citas {
+        padding: 1rem;
+    }
+
+    .form-label-titulo {
+        font-size: 1.1rem;
+    }
+}
